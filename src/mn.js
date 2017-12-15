@@ -24,12 +24,13 @@ const srcToImg = require('./helper/srcToimg');
 
         const srcs = await page.evaluate(() => {
             const images = document.querySelectorAll('img.main_img');
-            console.log(`${images.length} finded`);
             return Array.prototype.map.call(images, img => img.src);
         });
+        console.log(`${srcs.length} found`);
 
-        srcs.forEach(src => {
-            srcToImg(src, mn);
+        srcs.forEach(async (src) => {
+            await page.waitFor(200);
+            await srcToImg(src, mn);
         });
 
         await browser.close();
