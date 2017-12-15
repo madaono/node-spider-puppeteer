@@ -1,0 +1,26 @@
+{
+  "name": "spider-puppeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madaono/node-spider-puppeteer.git"
+  },
+  "keywords": [
+    "node",
+    "spider"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madaono/node-spider-puppeteer/issues"
+  },
+  "homepage": "https://github.com/madaono/node-spider-puppeteer#readme",
+  "dependencies": {
+    "puppeteer": "^0.13.0"
+  }
+}
